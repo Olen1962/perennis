@@ -1,0 +1,13 @@
+{{ define "main" }}
+  {{ range .Pages.ByDate.Reverse }}
+    {{ if ne .File.LogicalName "_index.md" }}
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ if .Description }}<p>{{ .Description }}</p>{{ end }}
+          <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline-primary">Ler mais</a>
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+{{ end }}

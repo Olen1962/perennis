@@ -1,0 +1,35 @@
+# Hugo
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+servidor/venv/
+
+# Dados privados das inscrições
+data/*.db
+data/*.db-*
+
+# Ficheiros ZIP
+*.zip
+
+
+# Python
+__pycache__/
+*.py[cod]

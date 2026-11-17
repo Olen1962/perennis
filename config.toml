@@ -1,0 +1,54 @@
+baseURL = "https://perennis.pt/"
+locale = "pt-PT"
+title = "Perennis"
+
+defaultContentLanguage = "pt"
+
+[params]
+  description = "Investigação e reflexão sobre princípios filosóficos e espirituais, através do estudo crítico de obras e tradições de conhecimento."
+  author = "Perennis"
+  keywords = "espiritismo, kardec, chico xavier, teosofia, budismo, hinduísmo, filosofia, ecumenismo"
+
+[[menu.main]]
+  name = "Início"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Autores"
+  url = "/autores/"
+  weight = 2
+
+[[menu.main]]
+  name = "Conceitos"
+  url = "/conceitos-comuns/"
+  weight = 3
+
+[[menu.main]]
+  name = "Comparações"
+  url = "/comparacoes/"
+  weight = 4
+
+[[menu.main]]
+  name = "Traduções"
+  url = "/traducoes/"
+  weight = 5
+
+[[menu.main]]
+  name = "Inscrição"
+  url = "/inscricao/"
+  weight = 6
+
+[taxonomies]
+  tag = "tags"
+  autor = "autores"
+  obra = "obras"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = false

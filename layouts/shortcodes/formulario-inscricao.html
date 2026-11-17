@@ -1,0 +1,90 @@
+
+<form id="inscricaoForm">
+  <div class="mb-3">
+    <label for="nome" class="form-label">Nome Completo *</label>
+    <input type="text" class="form-control" id="nome" name="nome"
+           required maxlength="150" placeholder="João Silva">
+  </div>
+	<div class="campo-verificacao" aria-hidden="true">
+    <label for="website">Não preencher este campo</label>
+    <input
+        type="text"
+        id="website"
+        name="website"
+        tabindex="-1"
+        autocomplete="off"
+    >
+</div>
+
+<input type="hidden" id="form_started_at" name="form_started_at">
+  <div class="mb-3">
+    <label for="email" class="form-label">Correio Eletrónico *</label>
+    <input type="email" class="form-control" id="email" name="email"
+           required maxlength="254" placeholder="joao@exemplo.pt">
+  </div>
+
+  <button type="submit" class="btn btn-primary" id="botaoInscricao">
+    Inscrever-se
+  </button>
+
+  <p id="mensagemInscricao" role="status" aria-live="polite"></p>
+</form>
+
+
+.campo-verificacao {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+<script>
+document.getElementById("inscricaoForm").addEventListener("submit", async function(event) {
+  event.preventDefault();
+
+  const formulario = this;
+  const botao = document.getElementById("botaoInscricao");
+  const mensagem = document.getElementById("mensagemInscricao");
+
+  botao.disabled = true;
+  mensagem.textContent = "A enviar inscrição...";
+
+  try {
+    const resposta = await fetch("http://127.0.0.1:5000/api/inscricoes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        nome: formulario.nome.value,
+        email: formulario.email.value,
+        website: formulario.website.value,
+        form_started_at: formulario.form_started_at.value
+      })
+    });
+
+    const resultado = await resposta.json();
+
+    if (!resposta.ok) {
+      throw new Error(resultado.erro || "Não foi possível efetuar a inscrição.");
+    }
+
+    mensagem.textContent = resultado.mensagem;
+    formulario.reset();
+
+  } catch (erro) {
+    mensagem.textContent = erro.message;
+  } finally {
+    botao.disabled = false;
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const campo = document.getElementById("form_started_at");
+
+  if (campo) {
+    campo.value = Math.floor(Date.now() / 1000);
+  }
+});
+</script>
