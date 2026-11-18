@@ -77,9 +77,9 @@ Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis. A
 - [ ] Verificar as ligações entre conteúdos relacionados.
 - [ ] Implementar a organização de Allan Kardec por língua: original francês e traduzido português.
 - [ ] Implementar a distinção entre originais pt-BR e adaptações pt-PT para Chico Xavier.
-- [ ] Preparar a página da série «A Vida no Mundo Espiritual», de André Luiz.
-- [ ] Registar os 13 volumes da série e iniciar o trabalho por «Nosso Lar».
-- [ ] Tratar os prefácios e textos associados como documentos identificados e ligados às respetivas obras.
+- [x] Criar a página da série «A Vida no Mundo Espiritual», de André Luiz.
+- [x] Registar os 13 volumes da série; iniciar o trabalho editorial por «Nosso Lar».
+- [ ] Transcrever e registar os prefácios como documentos próprios, ligados às respetivas obras, após consulta das edições.
 
 ### 5.3. Revisão editorial
 
