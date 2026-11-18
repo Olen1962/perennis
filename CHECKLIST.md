@@ -97,4 +97,42 @@ Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis.
 - [ ] Registar as referências bibliográficas.
 - [ ] Manter a fidelidade ao sentido do texto original.
 - [ ] Assinalar expressões ambíguas ou de difícil tradução.
-- [ ] Distinguir tradu
+- [ ] Distinguir traduções de adaptações.
+- [ ] Rever e comparar a tradução com o original.
+- [ ] Colocar as traduções em andamento na secção correspondente.
+- [ ] Transferir as traduções concluídas para a secção de finalizadas.
+- [ ] Atualizar os metadados e o estado de cada tradução. 
+
+7. Testes e construção
+
+- [ ] Criar o comando make construir.
+- [ ] Criar o comando make servir.
+- [ ] Criar o comando make limpar.
+- [ ] Executar uma construção completa com make construir.
+- [ ] Confirmar que a construção termina sem erros.
+- [ ] Resolver o problema de HTML omitido na página de inscrição.
+- [ ] Testar localmente todas as páginas.
+- [ ] Verificar ligações internas e externas.
+- [ ] Verificar imagens e outros recursos.
+- [ ] Verificar os ficheiros RSS e sitemap.
+- [ ] Rever os metadados e a apresentação nos motores de pesquisa. 
+
+8. Publicação
+
+- [ ] Confirmar o estado do repositório Git.
+- [ ] Rever as alterações antes de cada commit.
+- [ ] Confirmar que os ficheiros gerados não são adicionados indevidamente.
+- [ ] Construir novamente o sítio antes da publicação.
+- [ ] Publicar as alterações no repositório remoto.
+- [ ] Confirmar a atualização do sítio publicado.
+- [ ] Verificar o funcionamento do domínio perennis.pt. 
+
+9. Manutenção
+
+- [ ] Manter este checklist atualizado.
+- [ ] Atualizar README.md quando houver alterações relevantes.
+- [ ] Manter a documentação coerente com a estrutura real do projeto.
+- [ ] Rever periodicamente os modelos de conteúdo.
+- [ ] Rever as configurações e dependências do Hugo.
+- [ ] Eliminar apenas ficheiros gerados que possam ser recriados.
+- [ ] Não alterar a estrutura das secções sem necessidade justificada. 
