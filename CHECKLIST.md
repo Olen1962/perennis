@@ -1,6 +1,6 @@
 # CHECKLIST.md
 
-Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis.
+Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis. As tarefas só são assinaladas como concluídas depois de confirmadas no repositório ou testadas.
 
 ## 1. Preparação e estrutura
 
@@ -20,14 +20,14 @@ Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis.
 ## 2. Configuração do Hugo
 
 - [x] Definir o endereço principal do projeto.
-- [x] Configurar o idioma português (`pt-PT`).
-- [x] Configurar a linguagem predefinida do conteúdo.
+- [x] Configurar `defaultContentLanguage = "pt"`.
 - [x] Configurar os metadados gerais do sítio.
 - [x] Configurar os formatos de saída HTML e RSS.
 - [x] Configurar as taxonomias `tags`, `autores` e `obras`.
 - [x] Manter `unsafe = false` no processador Goldmark.
 - [x] Criar o CSS personalizado em `static/css/custom.css`.
 - [x] Confirmar a construção do sítio sem erros nem avisos relacionados com HTML.
+- [x] Não definir `languageCode = "pt-PT"`, opção que originou aviso de depreciação.
 
 ## 3. Layouts e apresentação
 
@@ -58,26 +58,28 @@ Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis.
 
 ## 5. Produção de conteúdos
 
-### 5.1. Tipos de conteúdo
+### 5.1. Modelos editoriais
 
-- [ ] Conteúdos originais.
-- [ ] Traduções.
-- [ ] Adaptações.
-- [ ] Comentários.
-- [ ] Análises.
-- [ ] Comparações.
-- [ ] Investigações críticas.
-- [ ] Reflexões próprias.
-- [ ] Sínteses.
+- [x] Criar `modelo-analise.md`.
+- [x] Criar `modelo-traducao.md`.
+- [x] Criar `modelo-original-pt-br.md` para preservar obras originais brasileiras.
+- [x] Criar `modelo-adaptacao-pt-pt.md` para adaptações editoriais para português europeu.
+- [ ] Rever e uniformizar os metadados dos modelos.
+- [ ] Criar modelos específicos adicionais apenas quando a necessidade estiver identificada.
 
-### 5.2. Organização
+### 5.2. Organização dos conteúdos
 
 - [ ] Confirmar a localização adequada de cada novo conteúdo.
 - [ ] Associar os conteúdos aos respetivos autores e obras.
-- [ ] Utilizar os modelos disponíveis em `modelos/`.
+- [ ] Utilizar o modelo adequado em `modelos/`.
 - [ ] Preencher corretamente os metadados.
 - [ ] Utilizar as taxonomias de forma consistente.
 - [ ] Verificar as ligações entre conteúdos relacionados.
+- [ ] Implementar a organização de Allan Kardec por língua: original francês e traduzido português.
+- [ ] Implementar a distinção entre originais pt-BR e adaptações pt-PT para Chico Xavier.
+- [ ] Preparar a página da série «A Vida no Mundo Espiritual», de André Luiz.
+- [ ] Registar os 13 volumes da série e iniciar o trabalho por «Nosso Lar».
+- [ ] Tratar os prefácios e textos associados como documentos identificados e ligados às respetivas obras.
 
 ### 5.3. Revisão editorial
 
@@ -90,34 +92,30 @@ Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis.
 - [ ] Rever a terminologia e a coerência conceptual.
 - [ ] Rever a ortografia e a gramática em português europeu.
 
-## 6. Traduções
+## 6. Traduções e adaptações
 
 - [ ] Seguir as orientações de `GUIA-TRADUCOES.md`.
 - [ ] Identificar a obra e a versão original.
 - [ ] Registar as referências bibliográficas.
 - [ ] Manter a fidelidade ao sentido do texto original.
 - [ ] Assinalar expressões ambíguas ou de difícil tradução.
-- [ ] Distinguir traduções de adaptações.
-- [ ] Rever e comparar a tradução com o original.
-- [ ] Colocar as traduções em andamento na secção correspondente.
-- [ ] Transferir as traduções concluídas para a secção de finalizadas.
-- [ ] Atualizar os metadados e o estado de cada tradução. 
+- [ ] Distinguir traduções de adaptações editoriais.
+- [ ] Manter os originais disponíveis para comparação.
+- [ ] Rever e comparar cada tradução ou adaptação com a fonte.
+- [ ] Atualizar os metadados e o estado de cada trabalho.
 
-7. Testes e construção
+## 7. Testes e construção
 
-- [ ] Criar o comando make construir.
-- [ ] Criar o comando make servir.
-- [ ] Criar o comando make limpar.
-- [ ] Executar uma construção completa com make construir.
+- [ ] Confirmar os comandos `make construir`, `make servir` e `make limpar`.
+- [ ] Executar uma construção completa com `make construir`.
 - [ ] Confirmar que a construção termina sem erros.
-- [ ] Resolver o problema de HTML omitido na página de inscrição.
 - [ ] Testar localmente todas as páginas.
 - [ ] Verificar ligações internas e externas.
 - [ ] Verificar imagens e outros recursos.
 - [ ] Verificar os ficheiros RSS e sitemap.
-- [ ] Rever os metadados e a apresentação nos motores de pesquisa. 
+- [ ] Rever os metadados e a apresentação nos motores de pesquisa.
 
-8. Publicação
+## 8. Publicação
 
 - [ ] Confirmar o estado do repositório Git.
 - [ ] Rever as alterações antes de cada commit.
@@ -125,9 +123,9 @@ Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis.
 - [ ] Construir novamente o sítio antes da publicação.
 - [ ] Publicar as alterações no repositório remoto.
 - [ ] Confirmar a atualização do sítio publicado.
-- [ ] Verificar o funcionamento do domínio perennis.pt. 
+- [ ] Verificar o funcionamento do domínio perennis.pt.
 
-9. Manutenção
+## 9. Manutenção
 
 - [ ] Manter este checklist atualizado.
 - [ ] Atualizar README.md quando houver alterações relevantes.
@@ -135,4 +133,4 @@ Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis.
 - [ ] Rever periodicamente os modelos de conteúdo.
 - [ ] Rever as configurações e dependências do Hugo.
 - [ ] Eliminar apenas ficheiros gerados que possam ser recriados.
-- [ ] Não alterar a estrutura das secções sem necessidade justificada. 
+- [ ] Não alterar a estrutura das secções sem necessidade justificada.
