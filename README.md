@@ -1,54 +1,87 @@
-# 🌍 Perennis - Projeto Ecuménico
+# Perennis
 
-> **"A verdade é uma só. Os sábios chamam-na por nomes diferentes."**
+> **A verdade é uma só. Os sábios chamam-na por nomes diferentes.**
 
-## 📌 Sobre
+## Sobre
 
-Projeto dedicado à tradução, adaptação, comentário e análise comparativa de obras espíritas, ecuménicas e filosóficas (Allan Kardec, Francisco Cândido Xavier, Teosofia, Buda, Krishna, etc.), com foco na unidade da Verdade.
+O Perennis é um projeto de investigação, tradução, adaptação, comentário e análise de obras espíritas, religiosas e filosóficas, procurando consolidar pontes de união e atenuar divisões entre diferentes tradições de pensamento.
 
-## 🗂 Estrutura do Projeto
+Entre as fontes de estudo encontram-se Allan Kardec, Francisco Cândido Xavier, André Luiz, a Teosofia, o Budismo e o Hinduísmo.
+
+## Organização dos conteúdos
+
+Os conteúdos do sítio encontram-se em `content/`, organizados por autores e áreas temáticas:
 
 ```text
-perennis/
+content/
 ├── autores/
-│   ├── allan-kardec/{obras,traducoes,analises}/
-│   ├── chico-xavier/{obras,traducoes,analises}/
-│   ├── teosofia/{obras,traducoes,analises}/
-│   ├── budismo/{obras,traducoes,analises}/
-│   ├── hinduismo/{obras,traducoes,analises}/
-│   └── outros/{obras,traducoes,analises}/
-├── conceitos-comuns/
+│   ├── allan-kardec/
+│   ├── chico-xavier/
+│   ├── budismo/
+│   ├── hinduismo/
+│   ├── teosofia/
+│   └── outros/
 ├── comparacoes/
-├── traducoes/{em-andamento,finalizadas}/
-├── modelos/
-├── tags/README.md
-├── content/
-├── layouts/_default/
-├── static/css/
-├── config.toml
-├── Makefile
-├── GUIA-TRADUCOES.md
-└── .gitignore
+├── conceitos-comuns/
+├── traducoes/
+└── inscricao.md
 ```
 
-## 🚀 Como Usar
+A organização interna de cada autor será definida de acordo com a natureza das obras e dos documentos. Não se deve presumir que todas as tradições utilizem a mesma estrutura editorial.
 
-```bash
-# Instalar Hugo no FreeBSD
-sudo pkg install hugo
+### Obras de Chico Xavier
 
-# Gerar o sítio
+É necessário distinguir claramente:
+
+- **Original em pt-BR:** texto da edição brasileira, preservado como fonte.
+- **Adaptação em pt-PT:** versão editorial em português europeu, relacionada com o original e comparável com ele.
+
+A adaptação não substitui o original. As opções editoriais e as diferenças relevantes devem ficar documentadas.
+
+### Obras de Allan Kardec
+
+A organização prevista distingue os textos em francês dos textos traduzidos para português:
+
+- `original-frances/`
+- `traduzido-portugues/`
+
+A edição utilizada deve ser sempre identificada. Prefácios e outros documentos associados às obras são tratados como documentos integrantes do respetivo contexto editorial.
+
+## Modelos editoriais
+
+Os modelos encontram-se em `modelos/`:
+
+| Modelo | Utilização |
+|---|---|
+| `modelo-original-pt-br.md` | Registo de uma obra original em português do Brasil |
+| `modelo-adaptacao-pt-pt.md` | Adaptação editorial de pt-BR para pt-PT |
+| `modelo-traducao.md` | Tradução |
+| `modelo-analise.md` | Análise |
+
+Ao criar um conteúdo, copiar o modelo adequado, preencher os metadados e identificar as fontes. Sempre que possível, indicar edição, capítulo, secção e página ou parágrafo.
+
+## Desenvolvimento local
+
+Requisitos: Hugo instalado.
+
+```sh
+# Construir o sítio
 hugo --minify
 
-# Iniciar servidor de desenvolvimento
+# Iniciar o servidor de desenvolvimento
 hugo server -D --port 1313
 ```
 
-Aceda a: http://localhost:1313
+Aceder a http://localhost:1313.
 
-## 📝 Como Adicionar Conteúdo
+No FreeBSD, Hugo pode ser instalado com:
 
-1. Copie um modelo da pasta `modelos/`
-2. Preencha os metadados
-3. Adicione o conteúdo em Markdown
-4. Teste com `hugo server -D`
+```sh
+sudo pkg install hugo
+```
+
+## Documentação de trabalho
+
+- `CHECKLIST.md`: acompanhamento das tarefas.
+- `GUIA-TRADUCOES.md`: orientações para traduções.
+- `modelos/`: modelos de conteúdos editoriais.
