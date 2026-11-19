@@ -58,7 +58,18 @@ Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis. A
 
 ## 5. Produção de conteúdos
 
-### 5.1. Modelos editoriais
+### 5.1. Princípios e arquitetura editorial
+
+- [x] Definir o Perennis prioritariamente como acervo multidisciplinar.
+- [x] Estabelecer a separação entre Acervo, Estudos e Pensamento.
+- [x] Registar no README o princípio de não confundir fontes documentais com análises ou opiniões.
+- [ ] Criar as secções Hugo independentes `acervo/`, `estudos/` e `pensamento/`.
+- [ ] Migrar gradualmente os conteúdos atuais para a nova estrutura, preservando ligações e endereços sempre que possível.
+- [ ] Definir referências cruzadas entre fontes, estudos e pensamentos sem fundir os respetivos conteúdos.
+- [ ] Preparar um modelo próprio para reflexões, hipóteses e questões pessoais.
+- [ ] Prever o histórico de versões das ideias sem substituir os registos anteriores.
+
+### 5.2. Modelos editoriais
 
 - [x] Criar `modelo-analise.md`.
 - [x] Criar `modelo-traducao.md`.
@@ -67,7 +78,7 @@ Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis. A
 - [ ] Rever e uniformizar os metadados dos modelos.
 - [ ] Criar modelos específicos adicionais apenas quando a necessidade estiver identificada.
 
-### 5.2. Organização dos conteúdos
+### 5.3. Organização dos conteúdos
 
 - [ ] Confirmar a localização adequada de cada novo conteúdo.
 - [ ] Associar os conteúdos aos respetivos autores e obras.
@@ -81,7 +92,7 @@ Lista de acompanhamento do desenvolvimento e manutenção do projeto Perennis. A
 - [x] Registar os 13 volumes da série; iniciar o trabalho editorial por «Nosso Lar».
 - [ ] Transcrever e registar os prefácios como documentos próprios, ligados às respetivas obras, após consulta das edições.
 
-### 5.3. Revisão editorial
+### 5.4. Revisão editorial
 
 - [ ] Verificar a fidelidade às fontes.
 - [ ] Distinguir claramente fontes, interpretações e conclusões próprias.
