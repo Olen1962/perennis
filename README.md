@@ -4,30 +4,51 @@
 
 ## Sobre
 
-O Perennis é um projeto de investigação, tradução, adaptação, comentário e análise de obras espíritas, religiosas e filosóficas, procurando consolidar pontes de união e atenuar divisões entre diferentes tradições de pensamento.
+O Perennis é, прежде de tudo, um **acervo multidisciplinar** de obras espíritas, religiosas, filosóficas e de outras áreas do conhecimento. Reúne fontes documentais de diferentes autores e tradições, procurando consolidar pontes de união e atenuar divisões entre diferentes formas de pensamento.
 
 Entre as fontes de estudo encontram-se Allan Kardec, Francisco Cândido Xavier, André Luiz, a Teosofia, o Budismo e o Hinduísmo.
 
-## Organização dos conteúdos
+## Princípio de organização editorial
 
-Os conteúdos do sítio encontram-se em `content/`, organizados por autores e áreas temáticas:
+O acervo documental tem autonomia relativamente aos estudos e às opiniões que possam nascer da sua leitura. A fonte não deve ser confundida com a interpretação.
+
+O Perennis distingue três espaços editoriais:
+
+1. **Acervo** — obras, documentos, fontes, edições, traduções e adaptações, organizados por autores, tradições e áreas do conhecimento.
+2. **Estudos** — análises, ensaios, investigações, comparações e estudos temáticos, sempre relacionados com as fontes utilizadas.
+3. **Pensamento** — reflexões pessoais, opiniões, hipóteses, dúvidas e questões em aberto, com possibilidade de acompanhar a evolução das ideias e preservar versões anteriores.
+
+Os três espaços podem estabelecer ligações e referências cruzadas, mas não devem ser fundidos. Uma opinião não é um documento-fonte; uma hipótese não é um facto estabelecido; uma análise não substitui a obra analisada.
+
+A expressão que resume este princípio é: **não confundir a estrada da beira com a beira da estrada.**
+
+## Estrutura editorial prevista
+
+A organização de conteúdos a implementar em `content/` deverá refletir esta separação:
 
 ```text
 content/
-├── autores/
-│   ├── allan-kardec/
-│   ├── chico-xavier/
-│   ├── budismo/
-│   ├── hinduismo/
-│   ├── teosofia/
-│   └── outros/
-├── comparacoes/
-├── conceitos-comuns/
-├── traducoes/
+├── acervo/
+│   ├── autores/
+│   │   ├── allan-kardec/
+│   │   ├── chico-xavier/
+│   │   ├── budismo/
+│   │   ├── hinduismo/
+│   │   ├── teosofia/
+│   │   └── outros/
+│   └── areas/
+├── estudos/
+│   ├── analises/
+│   ├── comparacoes/
+│   └── temas/
+├── pensamento/
+│   ├── reflexoes/
+│   ├── hipoteses/
+│   └── questoes/
 └── inscricao.md
 ```
 
-A organização interna de cada autor será definida de acordo com a natureza das obras e dos documentos. Não se deve presumir que todas as tradições utilizem a mesma estrutura editorial.
+Esta é a organização de referência; a migração da estrutura atual será feita de forma gradual, preservando os conteúdos, as ligações e os endereços sempre que possível. A organização interna de cada autor será definida de acordo com a natureza das obras e dos documentos. Não se deve presumir que todas as tradições utilizem a mesma estrutura editorial.
 
 ### Obras de Chico Xavier
 
