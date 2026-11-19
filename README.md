@@ -4,7 +4,7 @@
 
 ## Sobre
 
-O Perennis é, прежде de tudo, um **acervo multidisciplinar** de obras espíritas, religiosas, filosóficas e de outras áreas do conhecimento. Reúne fontes documentais de diferentes autores e tradições, procurando consolidar pontes de união e atenuar divisões entre diferentes formas de pensamento.
+O Perennis é, antes de tudo, um **acervo multidisciplinar** de obras espíritas, religiosas, filosóficas e de outras áreas do conhecimento. Reúne fontes documentais de diferentes autores e tradições, procurando consolidar pontes de união e atenuar divisões entre diferentes formas de pensamento.
 
 Entre as fontes de estudo encontram-se Allan Kardec, Francisco Cândido Xavier, André Luiz, a Teosofia, o Budismo e o Hinduísmo.
 
